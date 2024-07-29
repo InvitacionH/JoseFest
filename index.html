@@ -39,7 +39,10 @@
             once: true
         });
 
-
+document.addEventListener("visibilitychange", onchange);
+function onchange (evt) {
+   document.getElementById("musica").pause();
+};
     </script>
 </head>
 
